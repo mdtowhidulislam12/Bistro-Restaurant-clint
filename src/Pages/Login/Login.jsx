@@ -6,7 +6,7 @@ import lottieLogin from '/login.json'
 const Login = () => {
     return (
         <div className="hero bg-base-200 min-h-screen pt-24">
-            <div className="hero-content flex-col lg:flex-row-reverse md:gap-40">
+            <div className="hero-content flex-col md:flex-row md:gap-40">
                 <div className="text-center lg:text-left">
                     <Lottie loop={true} animationData={lottieLogin}></Lottie>
                 </div>
