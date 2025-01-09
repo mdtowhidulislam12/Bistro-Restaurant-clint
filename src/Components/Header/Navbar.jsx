@@ -1,24 +1,24 @@
 import React from 'react';
 import { FaCartArrowDown } from 'react-icons/fa';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
 
 
     const links = (<>
-        <li className='uppercase font-semibold'><Link to={'/'}>Home</Link></li>
-        <li className='uppercase font-semibold'><Link to={'/about'}>About</Link></li>
-        <li className='uppercase font-semibold'><Link to={'/contact'}>Contact</Link></li>
-        <li className='uppercase font-semibold'><Link to={'/menu'}>Our Menu</Link></li>
-        <li className='uppercase font-semibold'><Link to={'/shop'}>Our Shop</Link></li>
-        <li className='uppercase font-semibold'><Link to={'/dashboard'}><FaCartArrowDown></FaCartArrowDown>
+        <li className='uppercase font-semibold'><NavLink to={'/'}>Home</NavLink></li>
+        <li className='uppercase font-semibold'><NavLink to={'/about'}>About</NavLink></li>
+        <li className='uppercase font-semibold'><NavLink to={'/contact'}>Contact</NavLink></li>
+        <li className='uppercase font-semibold'><NavLink to={'/menu'}>Our Menu</NavLink></li>
+        <li className='uppercase font-semibold'><NavLink to={'/shop'}>Our Shop</NavLink></li>
+        <li className='uppercase font-semibold'><NavLink to={'/dashboard'}><FaCartArrowDown></FaCartArrowDown>
             <div className='badge badge-warning'>+99</div>
-        </Link></li>
+        </NavLink></li>
 
     </>)
     return (
         
-            <div className="navbar bg-orange-400 text-black fixed z-10 max-w-[90%] mx-auto opacity-85">
+            <div className="navbar bg-black text-white fixed z-10 max-w-[90%] mx-auto opacity-80">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-orange-400 text-black rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-52 p-2 shadow opacity-80">
                             {
                                 links
                             }
@@ -57,7 +57,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to={'/login'}><button className='uppercase font-bold btn btn-outline'>log in</button></Link>
+                    <Link to={'/login'}><button className='uppercase font-bold text-orange-400 btn btn-outline'>log in</button></Link>
                 </div>
             </div>
         
