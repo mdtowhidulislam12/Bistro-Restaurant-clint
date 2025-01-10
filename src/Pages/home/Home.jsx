@@ -8,6 +8,7 @@ import Call from './Call';
 import Carts from '../../Components/Shered/Carts';
 import img from '../../assets/assets/home/chef-service.jpg'
 import BannerContent from './BannerContent';
+import Rating from '../../Components/Rating/Rating';
 
 const Home = () => {
     return (
@@ -36,6 +37,11 @@ const Home = () => {
                 <Headding title={'From Our menu'} subtitle={'Check it Out'}></Headding>
                 <BannerContent></BannerContent>
             </div>
+
+
+            {/* rating */}
+
+            <Rating></Rating>
         </div>
 
         
